@@ -106,54 +106,30 @@ class DetailViewController: UIViewController {
     
     var itunesURL = ""
     
-    
-    
-    
-    
-    
-    
+    // MARK: View controller methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         setUpNavBar()
         configureUserInterface()
-        
     }
     
-    
-    
-    
     fileprivate func configureUserInterface() {
-        
         view.backgroundColor = .white
-        
         view.addSubview(stackView)
         stackView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10).isActive = true
         stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10).isActive = true
         stackView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -10).isActive = true
         stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -100).isActive = true
-        
-        //Image and copyright stack
         stackView.addArrangedSubview(verticalStackView)
-        
         verticalStackView.addArrangedSubview(productImage)
         verticalStackView.addArrangedSubview(copyrightLabel)
-        
-        productImage.widthAnchor.constraint(equalToConstant: 300).isActive = true
         productImage.heightAnchor.constraint(equalToConstant: 300).isActive = true
-        
-        copyrightLabel.widthAnchor.constraint(equalToConstant: 100).isActive = true
         copyrightLabel.heightAnchor.constraint(equalToConstant: 35).isActive = true
-        
         stackView.addArrangedSubview(albumTitleLabel)
         stackView.addArrangedSubview(artistNameLabel)
-        
         stackView.addArrangedSubview(genreLabel)
         stackView.addArrangedSubview(releaseDateLabel)
-        
         view.addSubview(openLinkButton)
-        
         openLinkButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
         openLinkButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
         openLinkButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20).isActive = true
@@ -162,11 +138,12 @@ class DetailViewController: UIViewController {
     fileprivate func setUpNavBar(){
         let backButton = UIBarButtonItem()
         backButton.title = "Back"
+        backButton.tintColor = .white
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
     }
     
     
-    
+    //MARK: Actions
     @objc func buttonAction(sender: UIButton!) {
         if let url = URL(string: itunesURL) {
             UIApplication.shared.open(url)

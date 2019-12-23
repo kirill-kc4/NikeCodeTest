@@ -27,3 +27,4 @@ struct Result: Decodable {
 struct Genre: Decodable {
     let name: String
 }
+

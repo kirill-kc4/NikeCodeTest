@@ -9,14 +9,14 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController {
     
     //MARK: Properties
     private var myTableView: UITableView!
     private var dataJSONFile: AlbumData?
     private let top100albumsURL = "https://rss.itunes.apple.com/api/v1/us/apple-music/top-albums/all/100/explicit.json"
     
-    
+    // MARK: View controller methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,16 +36,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         myTableView.delegate = self
         self.view.addSubview(myTableView)
     }
+
     
-    
-    fileprivate func getImageDataFromURL(url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
-        URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
-    }
-    
-    
-    
-    
-    
+    // MARK: Networking & Parsing JSON
     fileprivate func getDataAndParseJSON() {
         if let url = URL(string: top100albumsURL) {
             do {
@@ -59,14 +52,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             print("JSON file doesnt exists")
         }
     }
-
+    
     
 }
 
 
 
-extension ViewController {
-    
+// MARK: UITableViewDataSource
+extension ViewController: UITableViewDataSource  {
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         guard let numberOfRows = dataJSONFile?.feed.results.count else {return 1}
@@ -96,6 +90,11 @@ extension ViewController {
         return cell
     }
     
+}
+
+
+// MARK: UITableViewDelegate
+extension ViewController: UITableViewDelegate  {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         100
@@ -128,6 +127,13 @@ extension ViewController {
         self.navigationController?.pushViewController(detailViewController, animated: true)
     }
     
-    
-    
+}
+
+//MARK: Image Download
+extension ViewController {
+
+fileprivate func getImageDataFromURL(url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
+    URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
+}
+
 }

@@ -30,7 +30,7 @@ class CustomTableCell: UITableViewCell {
         return stackView
     }()
     
-     let productImage : UIImageView = {
+    let productImage : UIImageView = {
         let image = UIImage(named: "image")
         let imgView = UIImageView(image: image)
         imgView.contentMode = .scaleAspectFit
@@ -39,7 +39,7 @@ class CustomTableCell: UITableViewCell {
     }()
     
     
-     let albumTitleLabel: UILabel = {
+    let albumTitleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.clipsToBounds = true
@@ -50,15 +50,15 @@ class CustomTableCell: UITableViewCell {
         return label
     }()
     
-         let artistNameLabel: UILabel = {
-            let label = UILabel()
-            label.translatesAutoresizingMaskIntoConstraints = false
-            label.clipsToBounds = true
-            label.textAlignment = .center
-            label.font = .italicSystemFont(ofSize: 13)
-            label.textColor = .darkGray
-            return label
-        }()
+    let artistNameLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.clipsToBounds = true
+        label.textAlignment = .center
+        label.font = .italicSystemFont(ofSize: 13)
+        label.textColor = .darkGray
+        return label
+    }()
     
     
     fileprivate func tableViewCellUserInterface() {
@@ -78,11 +78,8 @@ class CustomTableCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: .default, reuseIdentifier: reuseIdentifier)
-       
         
-            self.tableViewCellUserInterface()
- 
-        
+        self.tableViewCellUserInterface()
         
     }
     

@@ -12,21 +12,14 @@
 		C51F41E923A7F1A700CE5AC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F41E823A7F1A700CE5AC7 /* ViewController.swift */; };
 		C51F41EE23A7F1A900CE5AC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C51F41ED23A7F1A900CE5AC7 /* Assets.xcassets */; };
 		C51F41FC23A7F1A900CE5AC7 /* NikeCodeTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F41FB23A7F1A900CE5AC7 /* NikeCodeTestTests.swift */; };
-		C51F420723A7F1A900CE5AC7 /* NikeCodeTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F420623A7F1A900CE5AC7 /* NikeCodeTestUITests.swift */; };
 		C51F421923A83A2B00CE5AC7 /* CustomProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F421823A83A2B00CE5AC7 /* CustomProductCell.swift */; };
 		C51F421D23A85CB100CE5AC7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F421C23A85CB100CE5AC7 /* DetailViewController.swift */; };
+		C54F2C3923B067B900CC1A45 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = C54F2C3823B067B900CC1A45 /* test.json */; };
 		C5F3FC0C23A9F87F00590780 /* DataStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F3FC0B23A9F87F00590780 /* DataStructure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		C51F41F823A7F1A900CE5AC7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C51F41D923A7F1A700CE5AC7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C51F41E023A7F1A700CE5AC7;
-			remoteInfo = NikeCodeTest;
-		};
-		C51F420323A7F1A900CE5AC7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C51F41D923A7F1A700CE5AC7 /* Project object */;
 			proxyType = 1;
@@ -45,11 +38,9 @@
 		C51F41F723A7F1A900CE5AC7 /* NikeCodeTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NikeCodeTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C51F41FB23A7F1A900CE5AC7 /* NikeCodeTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikeCodeTestTests.swift; sourceTree = "<group>"; };
 		C51F41FD23A7F1A900CE5AC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C51F420223A7F1A900CE5AC7 /* NikeCodeTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NikeCodeTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C51F420623A7F1A900CE5AC7 /* NikeCodeTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikeCodeTestUITests.swift; sourceTree = "<group>"; };
-		C51F420823A7F1A900CE5AC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C51F421823A83A2B00CE5AC7 /* CustomProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProductCell.swift; sourceTree = "<group>"; };
 		C51F421C23A85CB100CE5AC7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C54F2C3823B067B900CC1A45 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 		C5F3FC0B23A9F87F00590780 /* DataStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructure.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,13 +59,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C51F41FF23A7F1A900CE5AC7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -83,7 +67,6 @@
 			children = (
 				C51F41E323A7F1A700CE5AC7 /* NikeCodeTest */,
 				C51F41FA23A7F1A900CE5AC7 /* NikeCodeTestTests */,
-				C51F420523A7F1A900CE5AC7 /* NikeCodeTestUITests */,
 				C51F41E223A7F1A700CE5AC7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,7 +76,6 @@
 			children = (
 				C51F41E123A7F1A700CE5AC7 /* NikeCodeTest.app */,
 				C51F41F723A7F1A900CE5AC7 /* NikeCodeTestTests.xctest */,
-				C51F420223A7F1A900CE5AC7 /* NikeCodeTestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				C51F41F223A7F1A900CE5AC7 /* Info.plist */,
-				C5F3FC0A23A9F86300590780 /* Model */,
+				C5F3FC0A23A9F86300590780 /* DataStructure */,
 				C5F3FC0923A9F77F00590780 /* Controllers */,
 				C5F3FC0823A9F76800590780 /* View */,
 				C5F3FC0723A9F70B00590780 /* Supporting Files */,
@@ -114,18 +96,18 @@
 			isa = PBXGroup;
 			children = (
 				C51F41FB23A7F1A900CE5AC7 /* NikeCodeTestTests.swift */,
+				C54F2C3823B067B900CC1A45 /* test.json */,
 				C51F41FD23A7F1A900CE5AC7 /* Info.plist */,
 			);
 			path = NikeCodeTestTests;
 			sourceTree = "<group>";
 		};
-		C51F420523A7F1A900CE5AC7 /* NikeCodeTestUITests */ = {
+		C566896523B007000046789A /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				C51F420623A7F1A900CE5AC7 /* NikeCodeTestUITests.swift */,
-				C51F420823A7F1A900CE5AC7 /* Info.plist */,
+				C51F421823A83A2B00CE5AC7 /* CustomProductCell.swift */,
 			);
-			path = NikeCodeTestUITests;
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		C5F3FC0723A9F70B00590780 /* Supporting Files */ = {
@@ -141,7 +123,7 @@
 		C5F3FC0823A9F76800590780 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C51F421823A83A2B00CE5AC7 /* CustomProductCell.swift */,
+				C566896523B007000046789A /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -155,12 +137,12 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		C5F3FC0A23A9F86300590780 /* Model */ = {
+		C5F3FC0A23A9F86300590780 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
 				C5F3FC0B23A9F87F00590780 /* DataStructure.swift */,
 			);
-			path = Model;
+			path = DataStructure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,24 +183,6 @@
 			productReference = C51F41F723A7F1A900CE5AC7 /* NikeCodeTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C51F420123A7F1A900CE5AC7 /* NikeCodeTestUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C51F421123A7F1A900CE5AC7 /* Build configuration list for PBXNativeTarget "NikeCodeTestUITests" */;
-			buildPhases = (
-				C51F41FE23A7F1A900CE5AC7 /* Sources */,
-				C51F41FF23A7F1A900CE5AC7 /* Frameworks */,
-				C51F420023A7F1A900CE5AC7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C51F420423A7F1A900CE5AC7 /* PBXTargetDependency */,
-			);
-			name = NikeCodeTestUITests;
-			productName = NikeCodeTestUITests;
-			productReference = C51F420223A7F1A900CE5AC7 /* NikeCodeTestUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -233,10 +197,6 @@
 						CreatedOnToolsVersion = 11.3;
 					};
 					C51F41F623A7F1A900CE5AC7 = {
-						CreatedOnToolsVersion = 11.3;
-						TestTargetID = C51F41E023A7F1A700CE5AC7;
-					};
-					C51F420123A7F1A900CE5AC7 = {
 						CreatedOnToolsVersion = 11.3;
 						TestTargetID = C51F41E023A7F1A700CE5AC7;
 					};
@@ -257,7 +217,6 @@
 			targets = (
 				C51F41E023A7F1A700CE5AC7 /* NikeCodeTest */,
 				C51F41F623A7F1A900CE5AC7 /* NikeCodeTestTests */,
-				C51F420123A7F1A900CE5AC7 /* NikeCodeTestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -275,13 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C51F420023A7F1A900CE5AC7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				C54F2C3923B067B900CC1A45 /* test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,14 +262,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C51F41FE23A7F1A900CE5AC7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C51F420723A7F1A900CE5AC7 /* NikeCodeTestUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -324,11 +269,6 @@
 			isa = PBXTargetDependency;
 			target = C51F41E023A7F1A700CE5AC7 /* NikeCodeTest */;
 			targetProxy = C51F41F823A7F1A900CE5AC7 /* PBXContainerItemProxy */;
-		};
-		C51F420423A7F1A900CE5AC7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C51F41E023A7F1A700CE5AC7 /* NikeCodeTest */;
-			targetProxy = C51F420323A7F1A900CE5AC7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -527,44 +467,6 @@
 			};
 			name = Release;
 		};
-		C51F421223A7F1A900CE5AC7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NikeCodeTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = kctest.NikeCodeTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NikeCodeTest;
-			};
-			name = Debug;
-		};
-		C51F421323A7F1A900CE5AC7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NikeCodeTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = kctest.NikeCodeTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NikeCodeTest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -591,15 +493,6 @@
 			buildConfigurations = (
 				C51F420F23A7F1A900CE5AC7 /* Debug */,
 				C51F421023A7F1A900CE5AC7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C51F421123A7F1A900CE5AC7 /* Build configuration list for PBXNativeTarget "NikeCodeTestUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C51F421223A7F1A900CE5AC7 /* Debug */,
-				C51F421323A7F1A900CE5AC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
